@@ -1,6 +1,112 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box:
+/* обязательно, и только так*/
+html {
+    box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* наследование */
+}
+/* размеры страници */
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+    }
+
+    /* мифические зазоры */
+    .wrapper-main{
+        font-size: 0px;
+        }
+
+
+
+header {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+/*SITE NAVIGATION*/
+.site-navigation {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+.item1 {
+    margin-right: 120px;
+}
+.item2 {
+    margin-right: 102px;
+}
+.item3 {
+    margin-right: 96px;
+}
+/* .site-navigation li:last-child {
+    margin-right: 0px;
+}
+.site-navigation li: not(:last-child) {
+    margin-right: 60px;
+} */
+
+.site-navigation a {
+    list-style: none; /* маркеры списка */
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "PlayfairDisplay";
+}
+/* цвет при наведении на ссылку*/
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #03a9f4;
+}
+
+/* MAIN */
+.artile-item {
+    margin: 0px;
+    padding: 0px;
+    width: 420px;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.artile-item:nth-child(2n) {
+    margin-right: 0px;
+}
+/* или
+.artile-item:not(:nth-child(3n)) {
+    margin-raight: 60px;
+} */
+
+
+/* !!! устраняем зазор строчно-блочных элементов (зазор переноса строки, который равен 1/4 текущего шрифта родителя)
+.artile-item {
+    font-size: 0px;
+}
+и далее всем задаем шрифты локально
+*/
+.artile-item p {
+    font-size: 14px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+    text-align: left;
+    }
+.artile-item h2 {
+    font-size: 30px;
+    font-family: "PlayfairDisplay";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+    }
+.img-name {
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+    line-height: 1.2;
+    }
