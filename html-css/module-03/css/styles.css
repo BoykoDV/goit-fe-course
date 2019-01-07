@@ -24,6 +24,7 @@ html {
 header {
 padding-top: 30px;
 padding-bottom: 30px;
+
 }
 
 /*SITE NAVIGATION*/
@@ -31,10 +32,14 @@ padding-bottom: 30px;
 margin: 0;
 padding: 0;
 text-align: center;
+margin-bottom: 68px;
 }
 
 .site-navigation li {
     display: inline-block;
+}
+.item {
+    display: block;
 }
 .item1 {
     margin-right: 120px;
@@ -82,6 +87,17 @@ text-align: center;
 .artile-item:not(:nth-child(3n)) {
     margin-raight: 60px;
 } */
+.artile-item img{
+margin-bottom: 30px;
+}
+
+.descript {
+    margin-bottom: 130px;
+}
+/* задаем нижний margin для последних двух article*/
+.descript:nth-last-child(-n+2) {
+    margin-bottom: 52px;
+}
 
 
 /* !!! устраняем зазор строчно-блочных элементов (зазор переноса строки, который равен 1/4 текущего шрифта родителя)
@@ -102,6 +118,7 @@ text-align: center;
     font-family: "PlayfairDisplay";
     color: rgb(98, 98, 98);
     line-height: 1.2;
+    margin-bottom: 36px;
     }
 .img-name {
     font-size: 14px;
@@ -109,4 +126,26 @@ text-align: center;
     color: rgb(180, 173, 158);
     text-transform: uppercase;
     line-height: 1.2;
+    margin-bottom: 26px;
     }
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 164px;
+        height: 60px;
+        font-size: 20px;
+        font-family: "PlayfairDisplay";
+        color: rgb(98, 98, 98);
+        line-height: 1.2;
+       /*  border-style: solid;
+        border-width: 1px;
+        border-color: black; */
+        border:  1px solid #000000;
+        margin-bottom: 70px;
+        background-color: white;
+    }
+/* подсветка кнопки при переключении табом */
+    button:hover,
+    button:focus {
+    color: #03a9f4;
+}
