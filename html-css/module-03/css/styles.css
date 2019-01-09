@@ -83,7 +83,7 @@ section:nth-child(2n) {
 }
     
 
-.wrapper-main:nth-child(n+2) {
+.wrapper-main {
     padding-top: 68px;
 }
 
