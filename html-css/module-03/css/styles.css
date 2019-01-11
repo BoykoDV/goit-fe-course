@@ -21,7 +21,7 @@ html {
 /* мифические зазоры */
 .wrapper-main{
     font-size: 0px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 /*SITE NAVIGATION*/
