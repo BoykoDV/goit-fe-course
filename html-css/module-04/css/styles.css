@@ -1,0 +1,190 @@
+/* обязательно, и только так*/
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* наследование */
+}
+
+/* размеры страници */
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+p {margin: 0px;}
+
+/*HEDER*/
+.page-header {
+    width: 1170px;
+    padding-top: 36px;
+}
+.site-logo {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+/* не работает, два часа ломал голову... 
+по этому сделал через span
+
+.site-logo::first-letter {
+    color: rgb(26, 188, 156);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+} */
+.site-logo span {
+    color: rgb(26, 188, 156);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.page-nav {
+    float: right;
+    margin-top: 10px;
+}
+.site-navigation {
+    margin: 0px;
+    margin-right: 30px;
+    padding: 0px;
+    max-width: auto;
+}
+.site-navigation a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 188, 156);
+    text-transform: uppercase;
+    line-height: 0.786;
+    font-weight: bold;
+}
+.item {
+    float: left;
+    padding-right: 25px;
+    list-style-type: none;
+}
+.item:last-child{
+    padding-right: 0px;
+}
+
+/* MAIN */
+/* 1 section-products */
+.section-title {
+    display: block;
+    margin: 0px;
+    padding-top: 106px;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;;
+    color: rgb(81, 81, 81);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-title::after {
+    display: block;
+    height:34px;
+    width: 164px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    content: "";
+    border-bottom: 7px solid rgb(26, 188, 156);
+}
+
+.products {
+    list-style: none;
+}
+.item-products {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.item-products:nth-child(4n) {
+    margin-right: 0px;
+}
+.description{
+    display: block;
+    height: 40px;
+    width: 255px;
+    margin: 0px;
+    padding: 0px;
+}
+.name-product {
+    margin: 0px;
+    width: 200px;
+    height: 40px;
+    background-color:black;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-indent: 12px; /* отступ слева */
+    padding-top: 4px;
+    float: left;
+}
+.price {
+    width: 54px;
+    height: 40px;
+    background-color: #8c8c8c;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4px;
+    margin-left: 200px;
+}
+
+/* 2 section-news */
+.section-news {
+    margin-left: 30px;
+}
+.art-title {
+    width: 350px;
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: rgb(0, 0, 0);
+    line-height: 1.444;
+}
+.art-title::after {
+    display: block;
+    height:18px;
+    width: 136px;
+    margin: 0;
+    content: "";
+    border-bottom: 3px solid rgb(26, 188, 156);
+    margin-bottom: 32px;
+}
+.art-text {
+    width: 350px;
+    margin-bottom: 18px;
+}
+.article-item {
+    float: left;
+    margin-right: 30px;
+}
+.article-item:last-child {
+    margin-right: 0px;
+}
+
+/* button */
+.news-button {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(26, 188, 156);
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin-bottom: 46px;
+}
