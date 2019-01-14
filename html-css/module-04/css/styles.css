@@ -55,16 +55,18 @@ p {margin: 0px;}
     margin: 0px;
     margin-right: 30px;
     padding: 0px;
-    max-width: auto;
 }
-.site-navigation a {
+.nav-link {
     text-decoration: none;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    color: rgb(26, 188, 156);
+    color: black;
     text-transform: uppercase;
     line-height: 0.786;
     font-weight: bold;
+}
+.nav-link:hover {
+    color: rgb(26, 188, 156);
 }
 .item {
     float: left;
@@ -141,6 +143,12 @@ p {margin: 0px;}
     text-align: center;
     padding-top: 4px;
     margin-left: 200px;
+}
+.item-products:hover .name-product {
+    background-color: #1abc9c;
+}
+.item-products:hover .price {
+    background-color: #7fd9c7;
 }
 
 /* 2 section-news */
