@@ -26,6 +26,11 @@ padding: 0px;}
 .page-header {
     padding-top: 36px;
 }
+.logo {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
 .logo-link {
     float: left;
     display: block;
@@ -40,13 +45,17 @@ padding: 0px;}
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 } 
-.page-nav {
-    float: right;
-    margin-top: 14px;
+.logo-link:hover,
+.logo-link:focus {
+    color: rgb(26, 188, 156);
+    outline: none;
 }
+
 .site-navigation {
+    float: right;
     margin: 0px;
     padding: 0px;
+    padding-top: 12px;
 }
 .nav-link {
     display: block;
@@ -58,8 +67,10 @@ padding: 0px;}
     line-height: 0.786;
     font-weight: bold;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: rgb(26, 188, 156);
+    outline: none;
 }
 .item {
     float: left;
@@ -145,13 +156,19 @@ padding: 0px;}
 .item-products:hover .price {
     background-color: #7fd9c7;
 }
+/* .item-products:focus .name-product{
+    background-color: #1abc9c;
+}
+.item-products:focus .price {
+    background-color: #7fd9c7;
+} */
 
 /* 2 section-news */
 .section-news {
     margin: 0 auto;
     padding: 0px;
     padding-top: 106px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .news {
     list-style: none;
@@ -161,6 +178,7 @@ padding: 0px;}
 .article-wrapper {
     float: left;
     margin-right: 30px;
+    width: 350px;
 }
 .article-wrapper:last-child {
     margin-right: 0px;
@@ -169,10 +187,15 @@ padding: 0px;}
     margin: 0px;
     padding: 0px;
 }
+.img-news {
+    margin-bottom: 18px;
+}
 .art-title {
-    width: 350px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
     font-size: 18px;
-    font-family: "OpenSans";
+    font-family: "Roboto";
     color: rgb(0, 0, 0);
     line-height: 1.444;
 }
@@ -183,13 +206,15 @@ padding: 0px;}
     margin: 0;
     content: "";
     border-bottom: 3px solid rgb(26, 188, 156);
-    margin-bottom: 32px;
 }
 .art-text {
     margin: 0px;
     padding: 0px;
-    width: 350px;
     margin-bottom: 18px;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(85, 82, 82);
+    text-align: justify;
 }
 /* button */
 .news-button {
@@ -199,10 +224,19 @@ padding: 0px;}
     text-decoration: none;
     background-color: rgb(26, 188, 156);
     font-size: 16px;
-    font-family: "OpenSans";
+    font-family: "Roboto";
     color: rgb(255, 255, 255);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 6px;
     text-transform: capitalize;
-    padding-top: 16px;
+    line-height: 52px; /* padding: 16px 0; */
+}
+.news-button:hover,
+.news-button:focus {
+    color:  rgb(26, 188, 156);
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    background-color:rgb(255, 255, 255);
+    border: 4px solid rgb(26, 188, 156);
+    outline: none;
 }
