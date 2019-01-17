@@ -78,7 +78,7 @@ padding: 0px;}
     list-style-type: none;
 }
 .item:last-child{
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 /* MAIN */
