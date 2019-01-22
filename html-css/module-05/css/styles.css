@@ -1,5 +1,4 @@
-/* @import "./vars.css"; */
-
+@import "./vars.css";
 /* обязательно, и только так*/
 html {
     box-sizing: border-box;
@@ -312,63 +311,3 @@ html {
     color: var(--main-bg-color);
     text-transform: capitalize;
 }
-
-
-
-/* experiment-js */
-body {
-    position: relative;
-}
-.experiment-js {
-    display: none; /* выкл */
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 1600px;
-    min-height: 100%;
-    background-color: rgba(255, 0, 0, .8);
-    z-index: 100;
-}
-.fix {
-    position: fixed;
-    top: 100px;
-    left: 600px;
-    display: block;
-    width: 400px;
-    height: 200px;
-    background-color: black;
-    border: 5px solid white;
-}
-.fix:hover {
-    cursor: pointer;
-}
-.fix:hover .btn-fix {
-    cursor: pointer;
-}
-.oops {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    color: blue;
-    text-transform: uppercase;
-    font-size: 24px;
-    text-align: center;
-}
-.oops span  {
-    color: red;
-}
-.btn-fix {
-    display: block;
-    position: absolute;
-    width: 60px;
-    height: 45px;
-    bottom: 20px;
-    left: 170px;
-    color: blue;
-    text-transform: uppercase;
-    font-size: 24px;
-    text-align: center;
-}
-/* experiment-js */
