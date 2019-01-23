@@ -11,9 +11,9 @@ html {
 
 /* размеры страници */
 .wrapper{
-    width: 1600px;
-    margin: 0px;
-    padding: 0px;
+    width: 1140px;
+    margin: 0;
+    padding: 0 15px;
 }
 .clearfix::after {
     display: table;
@@ -23,16 +23,20 @@ html {
 
 /*HEDER*/
 .page-header {
-    margin: 0px;
-    padding: 36px 245px;
+    margin: 0;
+    padding: 36px 15px;
+}
+.site-nav {
+    width: 1110px;
+    margin: 0;
+    padding: 0;
 }
 .logo {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     float: left;
 }
 .logo-link {
-    float: left;
     display: block;
     text-decoration: none;
     font-size: 30px;
@@ -53,7 +57,8 @@ html {
 
 .site-navigation {
     float: right;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     padding-top: 12px;
 }
 .nav-link {
@@ -77,79 +82,95 @@ html {
     list-style-type: none;
 }
 .item:last-child{
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 /* MAIN */
 /* slaider */
 .slaider {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .slaider-item {
     position: relative;
-    background-color:var(--main-font-color);
-    width: 1600px;
-    height: 600px;
-    margin: 0px;
     left: 0;
     top: 0;
+    background-image:url(../img/slides/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* bject-fit: cover для <img>*/o
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
 }
-.slaide-img {
+.slaider li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1110px;
+    height: 600px;
+    background-color: black;
     opacity: 0.522;
 }
 .slaider-ctrl {
+    border: none; /* странный дефолтный бордер button */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
     width: 104px;
     height: 104px;
-    background-color:var(--main-bg-color);
+    background-color:rgba(26, 188, 156, .8);
+    z-index: 100;
 }
 .slaider-ctrl:hover {
     cursor: pointer;
 }
 .slaider-ctrl-prev {
-    left: 245px;
+    background-image:url(../img/icons/arrow-prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 30px;
 }
 .slaider-ctrl-next {
-    right: 245px;
+    background-image:url(../img/icons/arrow-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 30px;
 }
-.arrow-img {
+.slaide-title {
+    margin: 0;
+    width: 790px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-.slaide-title {
-    position: absolute;
-    top: 220px;
-    left: 430px;
-    transform: translateY(-75%);
+    transform: translate(-50%, -90%);
     font-size: 60px;
     text-transform: uppercase;
     font-family: "Roboto";
     font-weight: bold;
+    text-align: center;
     color: var(--semi-font-color);
+    z-index: 100;
 }
-.slaide-describe {
+.slaide-descr {
     position: absolute;
-    top: 220px;
-    left: 430px;
-    transform: translateY(250%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -20%);
     font-size: 24px;
     text-transform: uppercase;
     font-family: var(--main-font-family);
     color: var(--semi-font-color);
+    z-index: 100;
 }
 
 /* section-products */
 .section-products {
-    height: 676px;
-    margin: 0 auto;
-    padding-top: 100px;
+    margin: 0;
+    padding: 100px 0;
     background-color: rgb(233, 240, 253);
 }
 .section-title {
@@ -172,7 +193,7 @@ html {
 }
 .products {
     margin: 0 auto;
-    padding: 0px 245px;
+    padding: 0;
     list-style: none;
 }
 .item-products {
@@ -185,14 +206,14 @@ html {
     margin-bottom: 0px;
 }
 .item-products:nth-child(4n) {
-    margin-right: 0px;
+    margin-right: 0;
 }
 .img {
     float: left;
 }
 .name-product {
     float: left;
-    margin: 0px;
+    margin: 0;
     width: 200px;
     background-color:var(--main-font-color);
     font-size: 18px;
@@ -210,7 +231,7 @@ html {
     font-size: 18px;
     font-family: var(--main-font-family);
     font-weight: bold;
-    color: var (--semi-font-color);
+    color: var(--semi-font-color);
     text-transform: uppercase;
     text-align: center;
     padding: 10px 0;
@@ -223,14 +244,20 @@ html {
 }
 
 /* overlay */
-.overlay {
+.overlay-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 0px;
+    left: 0px;
     opacity: 0;
-    width: 234px;
-    height: 262px;
+    height: 282px;
+    border: 10px solid var(--semi-font-color);
     background-color: rgba(115, 115, 115, .75);
+}
+.overlay-list li{
+    display: inline-block;
 }
 .like, .cross, .time {
     float: left;
@@ -247,33 +274,49 @@ html {
 }
 .like {
     margin-left: 35px;
+    background-image: url(../img/icons/hart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cross {
+    background-image: url(../img/icons/cross-arrows.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.time {
+    background-image: url(../img/icons/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .buy {
+    position: relative;
     margin: 0;
     padding: 0;
     margin-top: 7px;
     margin-left: 35px;
-    padding-left: 12px;
     width: 170px;
     height: 50px;
     background-color: rgb(50, 50, 50);
     border: 1px solid var(--semi-font-color);
+    background-image: url(../img/icons/trusk.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    padding-left: 12px;
 }
-.buy img {
-    float: left;
-    margin-top: 9px;
-}
-.buy span {
-    float: left;
-    text-transform: uppercase;
-    color: var(--semi-font-color);
-    text-align: center;
+.buy a {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    text-decoration: none;
     font-size: 14px;
     font-family: "Open Sans";
-    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
 }
+
 /* hover */
-.item-products:hover .overlay {
+.item-products:hover .overlay-list {
     opacity: 1;
 }
 .like:hover {
@@ -294,8 +337,12 @@ html {
 }
 /* footer */
 .page-footer {
+    display: block;
     height: 88px;
+    width: 1110px;
     background-color: rgb(50, 50, 50);
+    padding: 0;
+    margin: 0 15px;
 }
 .page-footer p {
     margin: 0;
