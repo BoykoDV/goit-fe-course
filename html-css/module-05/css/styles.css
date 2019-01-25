@@ -12,7 +12,7 @@ html {
 /* размеры страници */
 .wrapper{
     width: 1140px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
 }
 .clearfix::after {
@@ -23,7 +23,7 @@ html {
 
 /*HEDER*/
 .page-header {
-    margin: 0;
+    margin: 0 auto;
     padding: 36px 15px;
 }
 .site-nav {
@@ -342,7 +342,8 @@ html {
     width: 1110px;
     background-color: rgb(50, 50, 50);
     padding: 0;
-    margin: 0 15px;
+    margin: 0 auto;
+    /* margin: 0 15px; */
 }
 .page-footer p {
     margin: 0;
