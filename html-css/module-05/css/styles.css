@@ -87,24 +87,34 @@ html {
 
 /* MAIN */
 /* slaider */
-.slaider {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.site-main {
+.wrapper-slaider {
     position: relative;
-    left: 0;
     top: 0;
+    left: 0;
+    background-image:url(../img/slides/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* bject-fit: cover для <img>*/
+    height: 600px;
+    width: 1110px;
+    margin: 0 auto;
+    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
 }
-.slaider-navigation {
+.wrapper-slaider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1110px;
+    height: 600px;
+    background-color: black;
+    opacity: 0.522;
+}
+.slaider {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    padding: 0 30px;
+    height: 100%;
 }
 .slaider-ctrl {
     border: none; /* странный дефолтный бордер button */
@@ -132,27 +142,10 @@ html {
     background-position: center;
     right: 30px;
 }
-.slaider-item {
-    position: relative;
-    left: 0;
-    top: 0;
-    background-image:url(../img/slides/slide1.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* bject-fit: cover для <img>*/o
-    width: 100%;
-    height: 600px;
-    margin: 0px;
-    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
-}
-.slaider li::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1110px;
-    height: 600px;
-    background-color: black;
-    opacity: 0.522;
+.slaider-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .slaide-title {
     margin: 0;
