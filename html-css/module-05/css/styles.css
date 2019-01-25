@@ -92,27 +92,19 @@ html {
     margin: 0;
     padding: 0;
 }
-.slaider-item {
+.site-main {
     position: relative;
     left: 0;
     top: 0;
-    background-image:url(../img/slides/slide1.png);
-    background-repeat: no-repeat;
-    background-size: cover; /* bject-fit: cover для <img>*/o
-    width: 100%;
-    height: 600px;
-    margin: 0px;
-    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
 }
-.slaider li::after {
-    content: "";
+.slaider-navigation {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1110px;
+    width: 100%;
     height: 600px;
-    background-color: black;
-    opacity: 0.522;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 .slaider-ctrl {
     border: none; /* странный дефолтный бордер button */
@@ -139,6 +131,28 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     right: 30px;
+}
+.slaider-item {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-image:url(../img/slides/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* bject-fit: cover для <img>*/o
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
+}
+.slaider li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1110px;
+    height: 600px;
+    background-color: black;
+    opacity: 0.522;
 }
 .slaide-title {
     margin: 0;
