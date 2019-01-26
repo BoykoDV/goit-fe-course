@@ -1,15 +1,21 @@
+/* general */
 @import "./vars.css";
-/* обязательно, и только так*/
+
 html {
     box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit; /* наследование */
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* размеры страници */
+/*page size */
 .wrapper{
     width: 1140px;
     margin: 0 auto;
@@ -21,19 +27,12 @@ html {
     clear: both;
 }
 
-/*HEDER*/
+/*heder*/
 .page-header {
-    margin: 0 auto;
     padding: 36px 15px;
-}
-.site-nav {
-    width: 1110px;
-    margin: 0;
-    padding: 0;
 }
 .logo {
     margin: 0;
-    padding: 0;
     float: left;
 }
 .logo-link {
@@ -54,11 +53,9 @@ html {
     color: var(--main-bg-color);
     outline: none;
 }
-
 .site-navigation {
     float: right;
     margin: 0;
-    padding: 0;
     padding-top: 12px;
 }
 .nav-link {
@@ -84,39 +81,30 @@ html {
 .item:last-child{
     margin-right: 0;
 }
-
 /* slider */
 .wrapper-slider {
     position: relative;
-    top: 0;
-    left: 0;
     background-image:url(../img/slides/slide1.png);
     background-repeat: no-repeat;
-    background-size: cover; /* bject-fit: cover для <img>*/
+    background-position: center;
+    width: 1600px;
     height: 600px;
-    width: 1140px;
     margin: 0 auto;
-    /* ox-shadow: inset 0px 0px 1110px 0px var(--main-font-color); */ /* тень */
 }
 .wrapper-slider::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-color: black;
     opacity: 0.522;
 }
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    min-height: 600px;
 }
 .slider-ctrl {
-    border: none; /* странный дефолтный бордер button */
+    border: none; /* мифический бордер button */
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -145,14 +133,15 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 47%;
+    left: 15%;
+    transform: translateY(-50%);
 }
 .slider-title {
     margin: 0;
+    margin-bottom: 25px;
     width: 790px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
     font-size: 60px;
     text-transform: uppercase;
     font-family: "Roboto";
@@ -162,10 +151,8 @@ html {
     z-index: 100;
 }
 .slider-descr {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -20%);
+    margin: 0;
+    padding-left: 20px;
     font-size: 24px;
     text-transform: uppercase;
     font-family: var(--main-font-family);
@@ -179,7 +166,6 @@ html {
     padding: 0;
 }
 .section-products {
-    margin: 0;
     padding: 100px 15px;
     background-color: rgb(233, 240, 253);
 }
@@ -208,7 +194,6 @@ html {
 }
 .item-products {
     position: relative;
-    display: block;
     float: left;
     width: 255px;
     height: 322px;
@@ -254,69 +239,96 @@ html {
 }
 
 /* overlay */
+.overlay-wrapper {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 282px;
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.549);
+    cursor: pointer;
+}
+.overlay-wrapper:hover {
+    opacity: 1;
+}
+
+/* overlay-list */
 .overlay-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    height: 282px;
-    border: 10px solid var(--semi-font-color);
-    background-color: rgba(115, 115, 115, .75);
-}
-.overlay-list li{
-    display: inline-block;
-}
-.like, .cross, .time {
-    float: left;
-    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0;
+}
+/* li view*/
+.item-prod {
+    float: left;
+    border: 1px solid var(--semi-font-color);
+}
+.item-like, .item-cross, .item-time {
     width: 50px;
     height: 50px;
     background-color: transparent;
-    margin-top: 80px;
-    border: 1px solid var(--semi-font-color);
+    margin-bottom: 7px;
 }
-.like, .cross {
+.item-like, .item-cross {
     margin-right: 10px;
 }
-.like {
-    margin-left: 35px;
+.item-like {
     background-image: url(../img/icons/hart.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.cross {
+.item-cross {
     background-image: url(../img/icons/cross-arrows.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.time {
+.item-time {
     background-image: url(../img/icons/clock.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.buy {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    margin-top: 7px;
-    margin-left: 35px;
-    width: 170px;
-    height: 50px;
-    background-color: rgb(50, 50, 50);
-    border: 1px solid var(--semi-font-color);
+.item-buy {
     background-image: url(../img/icons/trusk.png);
     background-repeat: no-repeat;
     background-position: 10% 50%;
+    width: 170px;
+    height: 50px;
+    background-color: rgb(50, 50, 50);
     padding-left: 12px;
 }
-.buy a {
-    position: absolute;
-    left: 35%;
-    top: 35%;
+
+/* li hover*/
+.item-like:hover {
+    background-color: var(--main-bg-color);
+}
+.item-cross:hover {
+    background-color: var(--main-bg-color);
+}
+.item-time:hover {
+    background-color: var(--main-bg-color);
+}
+.item-buy:hover {
+    background-color: var(--main-bg-color);
+}
+
+/* button */
+.btn {
+    border: none; /* мифический бордер button */
+}
+.like, .cross, .time {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+.buy {
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
     text-decoration: none;
     font-size: 14px;
     font-family: "Open Sans";
@@ -325,35 +337,10 @@ html {
     text-align: center;
 }
 
-/* hover */
-.item-products:hover .overlay-list {
-    opacity: 1;
-}
-.like:hover {
-    background-color: var(--main-bg-color);
-    cursor: pointer;
-}
-.cross:hover {
-    background-color: var(--main-bg-color);
-    cursor: pointer;
-}
-.time:hover {
-    background-color: var(--main-bg-color);
-    cursor: pointer;
-}
-.buy:hover {
-    background-color: var(--main-bg-color);
-    cursor: pointer;
-}
 /* footer */
 .page-footer {
-    display: block;
     height: 88px;
-    width: 1140px;
     background-color: rgb(50, 50, 50);
-    padding: 0;
-    margin: 0 auto;
-    /* margin: 0 15px; */
 }
 .page-footer p {
     margin: 0;

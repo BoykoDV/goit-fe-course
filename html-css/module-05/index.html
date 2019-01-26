@@ -37,7 +37,7 @@
     </header>
       <!-- slider -->
       <div class="wrapper-slider">
-          <div class="slider">
+          <div class="slider wrapper">
             <button class="slider-ctrl slider-ctrl-prev"></button>
             <button class="slider-ctrl slider-ctrl-next"></button>
             <ul class="slider-list">
@@ -49,18 +49,21 @@
           </div>
       </div>
       <!-- slider -->
-    <main class="wrapper main">
-       <section class="section-products" >
+    <main class="main">
+      <section class="section-products">
+        <div class="wrapper">
           <h2 class="section-title">new collection</h2>
           <ul class="products clearfix">
             <li class="item-products clearfix">
               <!-- overlay -->
+              <div class="overlay-wrapper">
                 <ul class="overlay-list clearfix">
-                  <li class="like"><a href="#" target="_blank"></a></li>
-                  <li class="cross"><a href="#" target="_blank"></a></li>
-                  <li class="time"><a href="#" target="_blank"></a></li>
-                  <li class="buy"><a href="#" target="_blank">add to card</a></li>
+                    <li class="item-prod item-like"><button class="btn like"></button></li>
+                    <li class="item-prod item-cross"><button class="btn cross"></button></li>
+                    <li class="item-prod item-time"><button class="btn time"></button></li>
+                    <li class="item-prod item-buy"><button class="btn buy">add to card</button></li>
                 </ul>
+              </div>
               <!-- overlay -->
               <img class="img" src="./img/products/product-1.png" width="254" height="282" alt="blye tshirt">
               <div class="clearfix">
@@ -70,13 +73,15 @@
             </li>
             <li class="item-products clearfix">
               <!-- overlay -->
-              <ul class="overlay-list clearfix">
-                  <li class="like"><a href="#" target="_blank"></a></li>
-                  <li class="cross"><a href="#" target="_blank"></a></li>
-                  <li class="time"><a href="#" target="_blank"></a></li>
-                  <li class="buy"><a href="#" target="_blank">add to card</a></li>
-                </ul>
-              <!-- overlay -->
+              <div class="overlay-wrapper">
+                  <ul class="overlay-list clearfix">
+                      <li class="item-prod item-like"><button class="btn like"></button></li>
+                      <li class="item-prod item-cross"><button class="btn cross"></button></li>
+                      <li class="item-prod item-time"><button class="btn time"></button></li>
+                      <li class="item-prod item-buy"><button class="btn buy">add to card</button></li>
+                  </ul>
+                </div>
+                <!-- overlay -->
               <img class="img" src="img/products/product-2.png" width="254" height="282" alt="woman shirt"/>
               <div class="clearfix">
                 <p class="name-product">woman shirt</p>
@@ -85,13 +90,15 @@
             </li>
             <li class="item-products clearfix">
               <!-- overlay -->
-              <ul class="overlay-list clearfix">
-                  <li class="like"><a href="#" target="_blank"></a></li>
-                  <li class="cross"><a href="#" target="_blank"></a></li>
-                  <li class="time"><a href="#" target="_blank"></a></li>
-                  <li class="buy"><a href="#" target="_blank">add to card</a></li>
-                </ul>
-              <!-- overlay -->
+              <div class="overlay-wrapper">
+                  <ul class="overlay-list clearfix">
+                      <li class="item-prod item-like"><button class="btn like"></button></li>
+                      <li class="item-prod item-cross"><button class="btn cross"></button></li>
+                      <li class="item-prod item-time"><button class="btn time"></button></li>
+                      <li class="item-prod item-buy"><button class="btn buy">add to card</button></li>
+                  </ul>
+                </div>
+                <!-- overlay -->
               <img class="img" src="img/products/product-3.png" width="254" height="282" alt="yellow tshirt"/>
               <div class="clearfix">
                 <p class="name-product">yellow tshirt</p>
@@ -100,13 +107,15 @@
             </li>
             <li class="item-products clearfix">
               <!-- overlay -->
-              <ul class="overlay-list clearfix">
-                  <li class="like"><a href="#" target="_blank"></a></li>
-                  <li class="cross"><a href="#" target="_blank"></a></li>
-                  <li class="time"><a href="#" target="_blank"></a></li>
-                  <li class="buy"><a href="#" target="_blank">add to card</a></li>
-                </ul>
-              <!-- overlay -->
+              <div class="overlay-wrapper">
+                  <ul class="overlay-list clearfix">
+                    <li class="item-prod item-like"><button class="btn like"></button></li>
+                    <li class="item-prod item-cross"><button class="btn cross"></button></li>
+                    <li class="item-prod item-time"><button class="btn time"></button></li>
+                    <li class="item-prod item-buy"><button class="btn buy">add to card</button></li>
+                  </ul>
+                </div>
+                <!-- overlay -->
               <img class="img" src="img/products/product-4.png" width="254" height="282" alt="cool lingerie"/>
               <div class="clearfix">
                 <p class="name-product">cool lingerie</p>
@@ -114,10 +123,13 @@
               </div>
             </li>
           </ul>
-       </section>
+        </div>
+      </section>
     </main>
-    <footer class="wrapper page-footer" >
-      <p>all rights reserved &#169; docan | designet <span>themen graph</span></p>
+    <footer class="page-footer" >
+      <div class="wrapper">
+          <p>all rights reserved &#169; docan | designet <span>themen graph</span></p>
+      </div>
     </footer>
   </body>
 </html>
