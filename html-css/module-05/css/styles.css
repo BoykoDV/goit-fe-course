@@ -199,7 +199,6 @@ html, body {
     width: 255px;
     height: 322px;
     margin-right: 30px;
-    margin-bottom: 0px;
 }
 .item-products:nth-child(4n) {
     margin-right: 0;
