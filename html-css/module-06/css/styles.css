@@ -1,0 +1,361 @@
+/* general */
+@import "./vars.css";
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*page size */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*HEDER*/
+.page-header {
+    padding: 0;
+}
+.page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 54px;
+}
+.logo {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.logo-link {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: var(--main-font-family);
+    color: rgb(151, 225, 212);
+    font-weight: bold;
+    text-transform: capitalize;
+    word-spacing: -7px;
+    transition: color 200ms linear;
+}
+.logo-link:hover {
+    color: rgb(243, 129, 129);
+}
+.site-navigation {
+    width: 490px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.item:before {
+    content: "";
+    min-height:8px;
+    width: 50px;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transform: translateY(30px);
+    position: absolute; /* чтобы при hover не прыгали соседи */
+    transition: border-bottom 200ms linear;
+}
+.item:hover .nav-link {
+    color: rgb(243, 129, 129);
+}
+.item:hover:before {
+    border-bottom: 3px solid  rgb(243, 129, 129);
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    color: rgb(151, 225, 212);
+    text-transform: uppercase;
+    transition: color 200ms linear;
+}
+
+/* main */
+
+/* section services */
+.services {
+    padding-top: 130px;
+}
+.section-title {
+    font-size: 30px;
+    font-family: var(--main-font-family);
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.section-title span {
+    display: block; /* без него не работает first-letter */
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    text-transform: none;
+    text-align: center;
+}
+.section-title span::first-letter {
+    text-transform: capitalize;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    height:40px;
+    width: 60px;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(243, 129, 129);
+}
+.services-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 66px;
+}
+.item-services {
+    display: flex;
+    align-items: flex-start;
+    width: 380px;
+    min-height: 65px;
+    margin-bottom: 100px;
+}
+.item-services:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+.item-services::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height:65px;
+    background-repeat: no-repeat;
+    vertical-align: center;
+}
+.photography::before {
+    background-image: url(../img/icons/ALARM.png);
+}
+.web::before {
+    background-image: url(../img/icons/LINE\ GRAPH.png);
+}
+.creativity::before {
+    background-image: url(../img/icons/COMPUTER\ _\ OK.png);
+}
+.seo::before {
+    background-image: url(../img/icons/BOOK\ 2.png);
+}
+.cs::before {
+    background-image: url(../img/icons/HOME.png);
+}
+
+.digital::before {
+    background-image: url(../img/icons/IMAGE.png);
+}
+.item-name {
+    margin: 0;
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.descr {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+}
+
+/* section team */
+.team {
+    padding-top: 100px;
+    padding-bottom: 86px;
+}
+.slogan {
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+.slogan p {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.member {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 540px;
+}
+.wrap-img  {
+    width: 380px;
+    height: 470px;
+    background-color:rgb(149, 225, 211);
+}
+.photo {
+    transition: transform 200ms linear;
+}
+.member:hover .photo {
+    transform: translate(-10px, -10px);
+}
+.member:hover .overlay {
+    transform: translate(-10px, -10px);
+    opacity: 0.9;
+}
+.name {
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.profession {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+.profession span {
+    text-transform: uppercase;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    opacity: 0;
+    z-index: 100;
+    transition: transform 200ms linear, opacity 200ms linear;
+}
+.overlay-list-socials {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 470px;
+    align-items: center;
+    list-style: none;
+}
+.item-socials {
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(252, 227, 138);
+    margin: 1px;
+    transition: background-color 200ms linear;
+}
+.item-socials a { /* для кликабельности socials */
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+.item-socials:hover {
+    background-color:rgb(149, 225, 211);
+    cursor: pointer;
+}
+.facebook {
+    background-image:url(../img/icons-socials/facebook.png);
+}
+.twitter {
+    background-image:url(../img/icons-socials/twitter.png);
+}
+.pinterest {
+    background-image:url(../img/icons-socials/pinterest.png);
+}
+.instagram {
+    background-image:url(../img/icons-socials/instagram.png);
+}
+
+/* footer */
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.company {
+    width: 312px;
+}
+.company p{
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 0;
+}
+.f-logo {
+    text-transform: capitalize;
+    word-spacing: -5px;
+}
+.abbrev {
+    text-transform: uppercase;
+}
+.author {
+    text-transform: capitalize;
+    color: rgb(243, 129, 129);
+}
+.subscribe {
+    display: flex;
+    width: 380px;
+    min-height: 40px;
+    border: 1px solid rgb(153, 153, 153);
+}
+.window {
+    border: none;
+    width: 230px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    text-transform: capitalize;
+}
+.button {
+    border: none; /* мифический бордер button */
+    width: 150px;
+    height: 40px;
+    background-color: rgb(149, 225, 211);
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 200ms linear;
+}
+.button:hover {
+cursor: pointer;
+background-color: rgb(243, 129, 129);
+}
