@@ -164,7 +164,7 @@ html, body {
 .digital::before {
     background-image: url(../img/icons/IMAGE.png);
 }
-.item-name {
+.item-name, code {
     margin: 0;
     font-size: 14px;
     font-family: var(--main-font-family);
