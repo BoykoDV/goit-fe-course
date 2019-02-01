@@ -14,8 +14,8 @@
   <body>
     <div class="wrapper">
     <header class="page-header">
-      <nav class="page-nav">
         <h1 class="logo"><a href="#" target="_blank" class="logo-link">mo go</a></h1>
+        <nav class="page-nav">
         <ul class="site-navigation">
           <li class="item">
             <a href="#" target="_blank" class="nav-link" rel="noopener noreferrer">about</a>
@@ -38,7 +38,8 @@
     <main>
       <!-- services -->
       <section class="services">
-        <h2 class="section-title"><span>we work with</span>amazing services</h2>
+        <h2 class="section-title">we work with</h2>
+        <h3 class="section-title-semi">amazing services</h3>
         <ul class="services-list">
           <li class="item-services photography">
             <div class="item-descr">
@@ -81,8 +82,9 @@
       <!-- /services -->
       <!-- team -->
       <section class="team">
-        <h2 class="section-title"><span>who we are</span>meet our team</h2>
-        <div class="slogan"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt esse dolore harum dicta illo, libero necessitatibus cupiditate dolorum delectus dolores inventore nihil sed ipsam tempore quia eveniet obcaecati praesentium quas, suscipit laboriosam iste beatae? Dolorem!</p> </div>
+        <h2 class="section-title">who we are</h2>
+        <h3 class="section-title-semi bottom">meet our team</h3>
+        <p class="slogan">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt esse dolore harum dicta illo, libero necessitatibus cupiditate dolorum delectus dolores inventore nihil sed ipsam tempore quia eveniet obcaecati praesentium quas, suscipit laboriosam iste beatae? Dolorem!</p>
         <ul class="team-list">
           <li class="member">
             <!-- overlay -->
@@ -95,11 +97,10 @@
               </ul>
             </div>
             <!-- /overlay -->
-            <div class="wrap-img">
-              <img src="img/team/matthew-dix.png" class="photo" width="380" height="470" alt="matthew dix"/>
-            </div>
-            <p class="name">matthew dix</p>
-            <p class="profession">graphic design</p>
+            <figure class="content">
+                <p class="wrap-img"><img src="img/team/matthew-dix.png" class="photo" width="380" height="470" alt="matthew dix"/></p>
+                <figcaption class="descr"><div class="name">matthew dix</div>graphic design</figcaption>
+            </figure>
           </li>
           <li class="member">
             <!-- overlay -->
@@ -112,11 +113,10 @@
               </ul>
             </div>
             <!-- /overlay -->
-            <div class="wrap-img">
-              <img src="img/team/christopher-campbell.png" class="photo" width="380" height="470" alt="christopher campbell"/>
-            </div>
-            <p class="name">christopher campbell</p>
-            <p class="profession">brending&#8260;<span>ux</span> design</p>
+            <figure class="content">
+              <p class="wrap-img"><img src="img/team/christopher-campbell.png" class="photo" width="380" height="470" alt="christopher campbell"/></p>
+              <figcaption class="descr"><div class="name">christopher campbell</div>brending&#8260;<span>ux</span> design</figcaption>
+            </figure>
           </li>
           <li class="member">
             <!-- overlay -->
@@ -129,11 +129,10 @@
               </ul>
             </div>
             <!-- /overlay -->
-            <div class="wrap-img">
-              <img src="img/team/michael-fertig.png" class="photo" width="380" height="470" alt="michael fertig"/>
-            </div>
-            <p class="name">michael fertig</p>
-            <p class="profession">developer</p>
+            <figure class="content">
+                <p class="wrap-img"><img src="img/team/michael-fertig.png" class="photo" width="380" height="470" alt="michael fertig"/></p>
+                <figcaption class="descr"><div class="name">michael fertig</div>developer</figcaption>
+            </figure>
           </li>
          </ul>
       </section>
@@ -146,8 +145,8 @@
       </div>
       <form class="subscribe" action="http://marketolla.com/5-osnovnykh-prichin-pochemu-vash-sayt-ne-ra/">
         <input class="window" type="email" name="login" placeholder="  your email...">
-        <input class="button" type="submit" value="subscribe">
-        </form>
+        <button class="btn">subscribe</button>
+      </form>
     </footer>
   </div>
   </body>
