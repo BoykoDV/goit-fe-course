@@ -58,22 +58,6 @@ html, body {
     flex-wrap: wrap;
     list-style: none;
 }
-.item:before {
-    content: "";
-    min-height:8px;
-    width: 50px;
-    margin: 0 auto;
-    border-bottom: 3px solid rgb(255, 255, 255);
-    transform: translateY(30px);
-    position: absolute; /* чтобы при hover не прыгали соседи */
-    transition: border-bottom 200ms linear;
-}
-.item:hover .nav-link {
-    color: rgb(243, 129, 129);
-}
-.item:hover:before {
-    border-bottom: 3px solid  rgb(243, 129, 129);
-}
 .nav-link {
     text-decoration: none;
     font-size: 14px;
@@ -81,6 +65,20 @@ html, body {
     color: rgb(151, 225, 212);
     text-transform: uppercase;
     transition: color 200ms linear;
+}
+.nav-link:hover {
+    color: rgb(243, 129, 129);
+}
+.nav-link::after {
+display: block;
+content: '';
+height: 3px;
+background-color: rgb(243, 129, 129);
+transform: scaleX(0);
+transition: transform 200ms ease-in-out;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
 }
 
 /* main */
@@ -227,7 +225,7 @@ html, body {
     transform: translate(-10px, -10px);
     visibility: visible;
 }
-.descr {
+.descr-team {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     color: rgb(153, 153, 153);
@@ -271,18 +269,18 @@ html, body {
 .item-socials {
     width: 56px;
     height: 56px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: rgb(252, 227, 138);
     margin: 1px;
     transition: background-color 200ms linear;
 }
-.item-socials a { /* для кликабельности socials */
+.item-socials a {
     display: block;
     width: 56px;
     height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.item-socials:hover {
+.item-socials a:hover {
     background-color:rgb(149, 225, 211);
     cursor: pointer;
 }
