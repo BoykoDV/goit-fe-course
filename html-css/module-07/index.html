@@ -8,7 +8,8 @@
     <title>module-07</title>
   </head>
   <body>
-    <header class="page-header wrapper-content">
+    <div class="wrapper">
+    <header class="page-header">
         <h1 class="logo"><a href="#" target="_blank" class="logo-link">golden</a></h1>
         <nav class="page-nav">
         <ul class="site-navigation">
@@ -31,7 +32,7 @@
       </nav>
     </header>
     <main>
-      <section class="services wrapper-content">
+      <section class="services">
         <h2 class="section-title">services</h2>
         <h3 class="section-title-semi">proin iaculis purus consequat sem cure</h3>
         <ul class="services-list">
@@ -50,11 +51,9 @@
         </ul>
       </section>
       <section class="feedback">
-        <div class="img wrapper">
-        <div class="wrapper-content">
         <h2 class="section-title color-title">contact us</h2>
         <h3 class="section-title-semi bottom">proin iaculis purus consequat sem cure</h3>
-        <form action="#" method="POST">
+        <form action="#" method="POST" class="fb-form">
           <ul class="feedback-form">
             <li>
                 <input class="profile required" required id="id-name" type = "text" name="name" placeholder="YOUR NAME*">
@@ -68,15 +67,12 @@
                 <input class="profile" id="id-number" type = "text" name="SUBJECT" placeholder="SUBJECT">
                 <label for="id-number"></label>
             </li>
-            <li>
-                <textarea class="message required" required placeholder="YOUR MESSEAGE*" name="message" rows="10" cols="33"></textarea>
-            </li>
           </ul>
+          <textarea class="message required" required placeholder="YOUR MESSEAGE*" name="message" rows="10" cols="33"></textarea>
           <input class="button" type="submit" value="send message">
         </form>
-        </div>
-        </div>
       </section>
     </main>
+    </div>
   </body>
 </html>
