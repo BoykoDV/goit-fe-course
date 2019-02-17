@@ -55,7 +55,7 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Roboto Slab";
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
@@ -74,7 +74,7 @@ html, body {
     margin: 0;
     margin-bottom: 20px;
     font-size: 40px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Roboto Slab";
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -134,7 +134,7 @@ html, body {
 .item-name {
     margin: 0;
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Roboto Slab";
     color: rgb(34, 34, 34);
     font-weight: bold;
     text-transform: capitalize;
@@ -221,7 +221,7 @@ outline:none;
     background-color: rgb(254, 209, 54);
     border: none; /* мифический бордер button */
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Roboto Slab";
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
