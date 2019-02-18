@@ -1,6 +1,6 @@
 /* general */
 @import "./normalize.css";
-@import "./fonts.css";
+/* @import "./fonts.css"; */
 @import "./vars.css";
 
 html {
@@ -38,7 +38,7 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 26px;
-    font-family: "Wisdom Script", "Oleo Script";
+    font-family: 'Rouge Script'/* , 'Wisdom Script' */;
     color: rgb(254, 219, 103);
     text-transform: capitalize;
 }
@@ -55,7 +55,7 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 14px;
-    font-family: "Montserrat", "Roboto Slab";
+    font-family: 'Montserrat', 'Roboto Slab';
     color: rgb(0, 0, 0);
     text-transform: uppercase;
 }
@@ -74,7 +74,7 @@ html, body {
     margin: 0;
     margin-bottom: 20px;
     font-size: 40px;
-    font-family: "Montserrat", "Roboto Slab";
+    font-family: 'Montserrat', 'Roboto Slab';
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -83,7 +83,7 @@ html, body {
     margin: 0;
     margin-bottom: 30px;
     font-size: 16px;
-    font-family: "Droid Serif", "PT Serif";
+    font-family: 'Droid Serif', 'PT Serif';
     color: rgb(119, 119, 119);
     font-style: italic;
     text-align: center;
@@ -134,7 +134,7 @@ html, body {
 .item-name {
     margin: 0;
     font-size: 18px;
-    font-family: "Montserrat", "Roboto Slab";
+    font-family: 'Montserrat', 'Roboto Slab';
     color: rgb(34, 34, 34);
     font-weight: bold;
     text-transform: capitalize;
@@ -142,7 +142,7 @@ html, body {
 .descr {
     margin: 0;
     font-size: 14px;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab';
     color: rgb(119, 119, 119);
     text-align: center;
 }
@@ -222,7 +222,7 @@ outline:none;
     background-color: rgb(254, 209, 54);
     border: none; /* мифический бордер button */
     font-size: 18px;
-    font-family: "Montserrat", "Roboto Slab";
+    font-family: 'Montserrat', 'Roboto Slab';
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;

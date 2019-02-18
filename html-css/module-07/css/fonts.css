@@ -1,12 +1,14 @@
-/* oleo-script-regular - latin */
+/* качал здесь https://google-webfonts-helper.herokuapp.com/fonts/ */
+
+/* rouge-script-regular - latin */
 @font-face {
-    font-family: 'Oleo Script'; /* Wisdom Script  */
-    font-style: normal;
-    font-weight: 400;
-    src: local('Oleo Script'), local('OleoScript-Regular'),
-         url('../fonts/Oleo-Script/oleo-script-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Oleo-Script/oleo-script-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
-  }
+  font-family: 'Rouge Script'; /* Wisdom Script  */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rouge Script'), local('RougeScript-Regular'),
+       url('../fonts/Rouge-Script/rouge-script-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Rouge-Script/rouge-script-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
 
 /* montserrat-regular - latin */
 @font-face {
