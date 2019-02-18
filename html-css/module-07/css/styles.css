@@ -38,7 +38,7 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 26px;
-    font-family: "Wisdom Script, Oleo Script";
+    font-family: "Wisdom Script", "Oleo Script";
     color: rgb(254, 219, 103);
     text-transform: capitalize;
 }
@@ -83,7 +83,7 @@ html, body {
     margin: 0;
     margin-bottom: 30px;
     font-size: 16px;
-    font-family: "Droid Serif, PT Serif";
+    font-family: "Droid Serif", "PT Serif";
     color: rgb(119, 119, 119);
     font-style: italic;
     text-align: center;
@@ -151,6 +151,7 @@ html, body {
 .feedback {
     margin: 0 auto;
     min-height: 676px;
+    max-width: 1400px;
     background-image: url(../img/Map-Image.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
