@@ -38,7 +38,11 @@ html, body {
     display: block;
     text-decoration: none;
     font-size: 26px;
+<<<<<<< HEAD
     font-family: 'Rouge Script'/* , 'Wisdom Script' */;
+=======
+    font-family: "Wisdom Script", "Oleo Script";
+>>>>>>> 4dc3b64388cd514d6443da5ef0f758dbee160db7
     color: rgb(254, 219, 103);
     text-transform: capitalize;
 }
@@ -83,7 +87,11 @@ html, body {
     margin: 0;
     margin-bottom: 30px;
     font-size: 16px;
+<<<<<<< HEAD
     font-family: 'Droid Serif', 'PT Serif';
+=======
+    font-family: "Droid Serif", "PT Serif";
+>>>>>>> 4dc3b64388cd514d6443da5ef0f758dbee160db7
     color: rgb(119, 119, 119);
     font-style: italic;
     text-align: center;
