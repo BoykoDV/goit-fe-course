@@ -1,6 +1,6 @@
 /* general */
 @import "./normalize.css";
-/* @import "./fonts.css"; */
+@import "./fonts.css";
 @import "./vars.css";
 
 html {
