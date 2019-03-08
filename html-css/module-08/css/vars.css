@@ -1,0 +1,14 @@
+:root {
+
+    /* font-colors */
+    --main-font-color: rgb(255, 255, 255);
+    --semi-font-color: rgb(0, 0, 0);
+
+    /* bg-colors */
+    --main-bg-color: rgb(255, 255, 255);
+    --semi-bg-color: rgb(255, 0, 0);
+
+    /* fonts */
+    --main-font-family: 'Montserrat', sans-serif;
+    --semi-font-family: 'Roboto', sans-serif;
+}

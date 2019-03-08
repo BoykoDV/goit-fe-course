@@ -1,0 +1,8 @@
+/* general */
+@import "./libs/normalize.css";
+@import "./fonts.css";
+@import "./vars.css";
+@import "./libs/utils.css";
+@import "./libs/common.css";
+@import "./components/1-banner.css";
+@import "./components/2-team.css";

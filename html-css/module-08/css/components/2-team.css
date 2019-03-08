@@ -1,0 +1,164 @@
+/* team */
+.team-title {
+    font-size: 2.2rem;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.team-title::first-letter {
+    text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+    .team-title {
+        margin-bottom: 4rem;
+    }
+}
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+    padding-bottom: 3rem;
+}
+.team-item-1 {
+    order: 1;
+}
+.team-item-2 {
+    order: 3;
+}
+.team-item-3 {
+    order: 2;
+}
+.team-item-4 {
+    order: 4;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+    .team-list {
+        min-width: 53.2rem;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .team-item {
+        width: 23.6rem;
+    }
+    .team-item-1 {
+        order: 1;
+    }
+    .team-item-2 {
+        order: 2;
+    }
+    .team-item-3 {
+        order: 3;
+    }
+    .team-item-4 {
+        order: 4;
+    }
+}
+@media (min-width: 940px) {
+    .team-list {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+    .team-item {
+        width: 22rem;
+    }
+    .team-item-1 {
+        order: 1;
+    }
+    .team-item-2 {
+        order: 2;
+    }
+    .team-item-3 {
+        order: 3;
+    }
+    .team-item-4 {
+        order: 4;
+    }
+}
+.wrap-img {
+    width: 12rem;
+    height: 12rem;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.photo-mbr-1 {
+    background-image: url(../../img/team/bradley-hunter.png);
+}
+.photo-mbr-2 {
+    background-image: url(../../img/team/heather-walker.png);
+    }
+.photo-mbr-3 {
+    background-image: url(../../img/team/lucas-marsha.png);
+}
+.photo-mbr-4 {
+    background-image: url(../../img/team/bradley-hunter-girl.png);
+}
+.icon {
+    border: 0.4rem solid white;
+    border-radius: 50%;
+    transform: translate(8rem, 9rem);
+    width: 3.2rem;
+    height: 3.2rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.icon-tv {
+    background-color: #ff4e50;
+    background-image: url(../../img/icon/tv.png);
+}
+.icon-coffe {
+    background-color: #1cd7ad;
+    background-image: url(../../img/icon/coffe.png);
+}
+.icon-bottle {
+    background-color: #ffa507;
+    background-image: url(../../img/icon/bottle.png);
+}
+.icon-plane {
+    background-color: #4e73db;
+    background-image: url(../../img/icon/plane.png);
+}
+.name {
+    font-size: 1.4rem;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+.dscr {
+    font-size: 1.4rem;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+.btn-team-wrap {
+    width: 28rem;
+    margin: 0 auto;
+}
+.btn-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 28rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Montserrat";
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border: 0.2rem solid rgb(255, 0, 0);
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
