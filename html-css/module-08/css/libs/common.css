@@ -18,21 +18,21 @@ html, body {
 /* mobile-first */
 @media (max-width: 767px) {
     .wrapper {
-        width: 32rem;
+        width: 30.4rem; /* 320px-16px */
         margin: 0 auto;
         padding: 0;
         }
     }
     @media (min-width: 768px) and (max-width: 939px) {
         .wrapper {
-            width: 76.8rem;
+            width: 75.2rem; /* 768px-16px */
             margin: 0 auto;
             padding: 0;
         }
     }
     @media (min-width: 940px) {
         .wrapper {
-            width: 94.2rem;
+            width: 92.4rem; /* 940px-16px */
             margin: 0 auto;
             padding: 0;
         }

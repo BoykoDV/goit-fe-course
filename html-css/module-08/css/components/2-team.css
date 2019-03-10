@@ -38,6 +38,9 @@
 .team-item-4 {
     order: 4;
 }
+.team-item:not(:last-child) {
+    margin-bottom: 3rem;
+}
 @media (min-width: 768px) and (max-width: 939px) {
     .team-list {
         min-width: 53.2rem;
@@ -59,11 +62,15 @@
     .team-item-4 {
         order: 4;
     }
+    .team-item:nth-last-child(-n+2) {
+        margin-bottom: 3rem;
+    }
 }
 @media (min-width: 940px) {
     .team-list {
         flex-flow: row wrap;
         justify-content: space-evenly;
+        align-items: flex-start;
         padding: 0;
         margin-bottom: 4rem;
     }
@@ -82,29 +89,20 @@
     .team-item-4 {
         order: 4;
     }
+    .team-item {
+        margin-bottom: 0;
+    }
 }
 .wrap-img {
     width: 12rem;
     height: 12rem;
-    background-repeat: no-repeat;
     margin: 0 auto;
-}
-.photo-mbr-1 {
-    background-image: url(../../img/team/bradley-hunter.png);
-}
-.photo-mbr-2 {
-    background-image: url(../../img/team/heather-walker.png);
-    }
-.photo-mbr-3 {
-    background-image: url(../../img/team/lucas-marsha.png);
-}
-.photo-mbr-4 {
-    background-image: url(../../img/team/bradley-hunter-girl.png);
+    margin-bottom: 2rem;
 }
 .icon {
     border: 0.4rem solid white;
     border-radius: 50%;
-    transform: translate(8rem, 9rem);
+    transform: translate(9rem, -4rem);
     width: 3.2rem;
     height: 3.2rem;
     background-repeat: no-repeat;
@@ -133,6 +131,8 @@
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 .dscr {
     font-size: 1.4rem;
@@ -140,6 +140,7 @@
     font-weight: 300;
     color: rgb(102, 102, 102);
     text-align: center;
+    margin: 0;
 }
 
 .btn-team-wrap {
@@ -152,13 +153,19 @@
     align-items: center;
     height: 4rem;
     width: 28rem;
-    text-decoration: none;
     font-size: 1.4rem;
     font-family: "Montserrat";
     color: rgb(255, 0, 0);
     font-weight: bold;
     border: 0.2rem solid rgb(255, 0, 0);
     border-radius: 1.5rem;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     margin-bottom: 6rem;
+    outline: none;
+}
+.btn-team:hover, .btn-team:active, .btn-team:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: 0.2rem solid rgb(255, 255, 255);
 }

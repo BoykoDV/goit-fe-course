@@ -3,6 +3,9 @@
     .banner {
         background-color: black;
         background-image: url(../../img/banner-smart.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         min-height: 54rem;
         margin-bottom: 7rem;
         }
@@ -11,6 +14,9 @@
     .banner {
         background-color: black;
         background-image: url(../../img/banner-tab.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         min-height: 70rem;
         margin-bottom: 7rem;
     }
@@ -19,6 +25,9 @@
     .banner {
         background-color: black;
         background-image: url(../../img/banner-desc.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         min-height: 70rem;
         margin-bottom: 7rem;
     }
@@ -62,6 +71,9 @@
     text-transform: uppercase;
     text-align: center;
 }
+.logo-link:hover, .logo-link:active, .logo-link:focus {
+    color: rgb(255, 0, 0);
+}
 .btn-wrap {
     margin: 0 auto;
     margin-bottom: 12rem;
@@ -77,6 +89,7 @@
     }
 }
 .btn-log-in, .btn-sign-up {
+    border-bottom: none;
     border: none;
     background-color: transparent;
     font-size: 1.4rem;
@@ -91,10 +104,18 @@ text-transform: uppercase;
     text-transform: uppercase;
 }
 .btn-sign-up {
-    border: 0.2rem solid white;
+    border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 1.5rem;
 }
-
+.btn-log-in:hover, .btn-log-in:active, .btn-log-in:focus {
+    color: rgb(255, 0, 0);
+    outline: none;
+}
+.btn-sign-up:hover, .btn-sign-up:active, .btn-sign-up:focus {
+    color: rgb(255, 0, 0);
+    border: 0.2rem solid rgb(255, 0, 0);
+    outline: none;
+}
 
 /* slogan */
 .title-section {
@@ -150,20 +171,22 @@ text-transform: uppercase;
         text-transform: uppercase;
     }
 }
-.btn-slogan-wrap {
-    background-color: #ff4e50;
-    width: 28rem;
-    border-radius: 1.5rem;
-    margin: 0 auto;
-}
 .btn-slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: 4rem;
+    width: 28rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 1.5rem;
     text-decoration: none;
+    text-align: center;
     font-size: 1.4rem;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
+    padding: 1.2rem;
+    margin: 0 auto;
+}
+.btn-slogan:hover, .btn-slogan:active, .btn-slogan:focus {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
