@@ -1,0 +1,15 @@
+:root {
+
+    /* bg-colors */
+    /* --main-font-color: rgb(0, 0, 0);
+    --semi-font-color: rgb(151, 225, 212); */
+
+    /* bg-colors */
+    /* --main-bg-color: rgb(151, 225, 212);
+    --semi-bg-color: rgb(252, 227, 138); */
+
+    /* fonts */
+    --main-font-family: 'Montserrat', sans-serif;
+    --semi-font-family: 'Kaushan Script', cursive;
+    --third-font-family: 'Roboto', sans-serif;
+}
