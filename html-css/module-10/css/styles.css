@@ -431,9 +431,9 @@ transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
     cursor: pointer;
 }
 .item-socials svg {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
 }
 
 /* .facebook {
