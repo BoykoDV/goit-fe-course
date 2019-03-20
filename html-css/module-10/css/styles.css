@@ -463,9 +463,8 @@ body {
 }
 .svg__sizes {
   display: block;
-  width: 360px;
-  height: 200px;
-  padding-left: 12px;
+  width: 56px;
+  height: 56px;
   fill: rgb(243, 129, 129);
 }
 
