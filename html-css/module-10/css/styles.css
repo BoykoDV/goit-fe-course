@@ -449,10 +449,9 @@ body {
 }
 .item-socials a {
   display: block;
-  width: 56px;
-  height: 56px;
-  text-align: center;
-  line-height: 84px;
+  width: 360px;
+  height: 200px;
+  padding-left: 12px;
 }
 .item-socials a:hover {
   background-color: rgb(149, 225, 211);
