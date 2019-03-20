@@ -467,6 +467,11 @@ body {
   height: 56px;
   fill: rgb(243, 129, 129);
 }
+.svg__sizes use {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
 
 /* .facebook {
     background-image:url(../img/icons-socials/facebook.png);
