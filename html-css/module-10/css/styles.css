@@ -453,14 +453,18 @@ body {
   height: 56px;
 }
 .item-socials a:hover {
-  background-color: rgb(149, 225, 211);
+  background-color: rgb(243, 129, 129);
   cursor: pointer;
+}
+.item-socials a:hover .svg__sizes {
+  fill: rgb(255, 255, 255);
 }
 .svg__sizes {
   display: block;
   width: 360px;
   height: 200px;
   padding-left: 12px;
+  fill: rgb(243, 129, 129);
 }
 
 /* .facebook {
