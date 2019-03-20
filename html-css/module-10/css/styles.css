@@ -463,15 +463,12 @@ body {
 }
 .svg__sizes {
   display: block;
-  width: 300px;
+  width: 290px;
   height: 170px;
   padding-left: 15px;
   fill: rgb(243, 129, 129);
 }
 .svg__use {
-  display: block;
-  width: 32px;
-  height: 32px;
 }
 
 /* .facebook {
