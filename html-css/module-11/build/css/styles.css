@@ -700,27 +700,27 @@ body {
 }
 
 .services__item--photography::before {
-  background-image: url(../img/icon/ALARM.png);
+  background-image: url(../images/icon/ALARM.png);
 }
 
 .services__item--web::before {
-  background-image: url(../img/icon/LINEGRAPH.png);
+  background-image: url(../images/icon/LINEGRAPH.png);
 }
 
 .services__item--creativity::before {
-  background-image: url(../img/icon/COMPUTEROK.png);
+  background-image: url(../images/icon/COMPUTEROK.png);
 }
 
 .services__item--seo::before {
-  background-image: url(../img/icon/BOOK2png);
+  background-image: url(../images/icon/BOOK2.png);
 }
 
 .services__item--cs::before {
-  background-image: url(../img/icon/HOME.png);
+  background-image: url(../images/icon/HOME.png);
 }
 
 .services__item--digital::before {
-  background-image: url(../img/icon/IMAGE.png);
+  background-image: url(../images/icon/IMAGE.png);
 }
 
 .services__name {
