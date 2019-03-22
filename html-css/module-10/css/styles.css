@@ -293,13 +293,13 @@ body {
   background-image: url(../img/icons/ALARM.png);
 }
 .services__item--web::before {
-  background-image: url(../img/icons/LINE\GRAPH.png);
+  background-image: url(../img/icons/LINE\ GRAPH.png);
 }
 .services__item--creativity::before {
-  background-image: url(../img/icons/COMPUTER\_\OK.png);
+  background-image: url(../img/icons/COMPUTER\ _\ OK.png);
 }
 .services__item--seo::before {
-  background-image: url(../img/icons/book\2png);
+  background-image: url(../img/icons/BOOK\ 2.png);
 }
 .services__item--cs::before {
   background-image: url(../img/icons/HOME.png);
